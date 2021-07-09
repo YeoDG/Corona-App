@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.example.messageinbottle.datamodel.GpsModel" />
+
+    </data>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        android:background="@drawable/design"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:dangercheck="@{item.danger}"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/textView3"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15sp"
+                    app:dangerIconcheck="@{item.danger}"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginRight="15dp"
+                    >
+
+                    <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="43dp"
+                        android:gravity="left|center"
+                        android:text="방문 시간"
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="48dp"
+                        android:gravity="left|center"
+                        android:text="방문 위치"
+                        android:textSize="17sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="18dp"
+                                app:removeTime="@{item.arrivalDate}"
+                                android:textSize="15sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                app:removeDAY="@{item.arrivalDate}"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="18dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:text="~"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="18dp"
+                                app:removeTime="@{item.leaveData}"
+                                android:textSize="15sp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                app:removeDAY="@{item.leaveData}"
+                                android:textSize="20sp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="left|center"
+                        android:text="@{item.adress.toString()}"
+                        android:textSize="17sp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>

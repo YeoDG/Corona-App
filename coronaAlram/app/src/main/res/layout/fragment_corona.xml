@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="coronafragment"
+            type="com.example.messageinbottle.CoronaFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/date_show"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/datebutton"
+            android:textSize="22sp"
+            android:onClick="showDatePicker"
+            />
+
+    <com.google.android.gms.maps.MapView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"/>
+    </LinearLayout>
+
+</layout>

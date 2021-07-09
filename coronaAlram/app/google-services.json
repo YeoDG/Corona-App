@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "806304849617",
+    "project_id": "coronaalarm-1fd22",
+    "storage_bucket": "coronaalarm-1fd22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806304849617:android:1c340414a4935bb2bb6ff0",
+        "android_client_info": {
+          "package_name": "com.example.messageinbottle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806304849617-lnhg2q8hne6avvn2s8fgk90d7tab61aq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.messageinbottle",
+            "certificate_hash": "74f2334296a52b47ad53fb7e962f3581c23c7604"
+          }
+        },
+        {
+          "client_id": "806304849617-s53556k1afrkb40e0hooggagdmmml7c2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.messageinbottle",
+            "certificate_hash": "af0ebfb7c86235a2069ebca2fbff7d0dbc46396e"
+          }
+        },
+        {
+          "client_id": "806304849617-tavknrfipg6r5mbjku0nihn7o56les86.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA43GKNJDmhJ3yPU6-rslPGk6Qxq6hGVHY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806304849617-tavknrfipg6r5mbjku0nihn7o56les86.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
